@@ -56,3 +56,10 @@
 #     return num
 # print (count())            
     
+# word = input('Enter your word here\n')
+# if word < 'banana':
+#     print ('your word ' + word + ' is before banana')
+# elif word > 'banana':
+#         print ('your word ' + word + ' is after banana')
+# else: print('No comparism')
+
