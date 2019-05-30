@@ -63,3 +63,39 @@
 #         print ('your word ' + word + ' is after banana')
 # else: print('No comparism')
 
+#I DON'T UNDERSTAND HOW 'while True' works
+# heading = 'Have a nice day'
+# if heading.startswith ('H'):
+#     print ('ok')
+# lower = heading.lower()
+# print (lower)
+
+#slicing a line of words
+# mail = 'email is adeneeyee@gmail.com as submitted on 24 may 2019'
+# find1 = mail.find('@')
+# print (find1)
+# find2 = mail.find (' ', find1)
+# print (find2)
+# mail_type = mail[find1 + 1 : find2]
+# print (mail_type)
+
+#the format operator % allows one to construct strings, replacing part of the string with data stored in a variable
+#"%d formats integer", "%g formats floats", "%s formats stings"
+# camels = 42
+# result = '%d' %camels
+# print ('I have spotted ' + result + ' camels')
+# print (result)
+
+# sentence = 'In my %d years in France, I have seen %g %s' %(4, 4.5,'comets')
+# print (sentence)
+
+while True:
+    line = input ('> ')
+    if len(line) > 0 and line[0] == '#':
+        # or 
+    # if line.startswith ('#'): #to avoid error when there is no input by the user
+        continue
+    if line == 'done':
+        break
+    print (line)
+print ('done!')
