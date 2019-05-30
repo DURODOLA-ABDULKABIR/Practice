@@ -14,7 +14,7 @@
 # fruit = ('banana')
 # index = 0
 # while index < len(fruit):
-#     letter = fruit[(index +1) - 6 ]
+#     letter = fruit[(index +1) - 6 ] #(starts printing letters from index = -1)
 #     print(index, letter)
 #     index = index + 1 
 
@@ -27,7 +27,7 @@
 # fruit = ('banana')
 # flex = 0
 # while flex < len(fruit):
-#     letter = fruit[(flex +1) - 6 ]
+#     letter = fruit[(flex +1) - 6 ] #(using another word instead of index)
 #     print(flex, letter)
 #     flex = flex + 1 
 
@@ -46,13 +46,13 @@
 #         count = count + 1
 #         print (count)
 
-def count():
-    fruit = input('enter the name of a fruit\n')
-    letter = input('which letter do you want to count?\n')
-    num = 0
-    for alphabet in fruit:
-        if letter == alphabet:
-            num = num + 1
-            return num
-print (count())            
+# def count():
+#     fruit = input('enter the name of a fruit\n')
+#     letter = input('which letter do you want to count?\n')
+#     num = 0
+#     for alphabet in fruit:
+#         if letter == alphabet:
+#             num = num + 1
+#     return num
+# print (count())            
     
