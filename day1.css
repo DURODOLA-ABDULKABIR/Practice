@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 40px
+    }
+    *{background-color:rgb(131, 194, 191);}
+    /*universal selector (*) styles every part of the page, selects h1 alone and styles it.
+    element or tag selector uses (.classname)
+    id selector uses (#idname)
+attribute selector to style a particular type of input using input[type="text"]{style} to style text input
+    to style more the one element, elements separated by comma{the style we want}*/
+    .headline{
+        font-size: 40px;
+        background-color: rgb(19, 19, 46);
+        text-decoration-color: pink;
+        color: whitesmoke; 
+    }
+   #writer{
+    text-align:;
+    font-size: 20px;
+    background-color: rgb(129, 153, 180);
+    text-decoration: blue;
+    text-decoration-color: rgb(221, 13, 48);
+    color: rgb(7, 7, 7);
+        
+    }
