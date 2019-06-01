@@ -89,13 +89,77 @@
 # sentence = 'In my %d years in France, I have seen %g %s' %(4, 4.5,'comets')
 # print (sentence)
 
-while True:
-    line = input ('> ')
-    if len(line) > 0 and line[0] == '#':
-        # or 
-    # if line.startswith ('#'): #to avoid error when there is no input by the user
-        continue
-    if line == 'done':
-        break
-    print (line)
-print ('done!')
+# if len(line) > 0 and line[0] == '#':
+#         # or 
+#     # if line.startswith ('#'): #to avoid error when there is no input by the
+#         continue
+#     if liwhile True:
+#     line = input ('> ')
+#     ne == 'done':
+#         break
+#     print (line)
+# print ('done!')
+
+# add = 'X-DSPAM-cofidence:0.8475'
+# place = add.find(':')
+# print (place)
+# ans = add[(17+1):]
+# print (ans)
+# convert = float(ans)
+# print (convert)
+# op = convert + 1
+# print (op)
+
+#LISTS
+# LOOPING THROUGH A LIST
+# words = ['hut', 'got', 'frog']
+# digits = [3, 9, 13, 5, 54, 7]
+# for i in range (len(digits)):
+#     digits [i] = digits[i] * 2
+# empty= []
+# words [1] = 1 
+# print(words, digits, empty)
+
+# LIST OPERATIONS
+a = [1, 3, 5, 8]
+b = [9, 1, 4, 6]
+c = a + b
+print (c)
+d = a * 3 #repeats the list (a) three times
+print (d)
+
+# LIST SLICES IS THE SAME AS STRING SLICES
+
+#LIST METHODS
+a.append(9) #adds another element to the list
+print (a)
+b.extend(a) #adds list "a" to b
+print (b)
+b.sort() #arranges the new "b" from low to high
+print (b)
+# b = b.sort()
+# print (b) #list methods are void, they return none
+
+#DELETING ELEMENTS
+x = b.pop(2) #removes the element with index specified 
+print (b) #returns the rest
+print (x) #returns the element removed
+# y = b.pop() #no index specified, returns only the last element
+# print (b)
+# print (y)
+
+#If the removed value is not needed, use delete
+del b[1]
+print (b)
+# if the index of the element is not known use remove
+b.remove(9)
+print (b)
+# to remove more than one element
+del b[1:4]
+print (b)
+
+
+
+
+
+
