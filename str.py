@@ -121,43 +121,79 @@
 # print(words, digits, empty)
 
 # LIST OPERATIONS
-a = [1, 3, 5, 8]
-b = [9, 1, 4, 6]
-c = a + b
-print (c)
-d = a * 3 #repeats the list (a) three times
-print (d)
+# a = [1, 3, 5, 8]
+# b = [9, 1, 4, 6]
+# c = a + b
+# print (c)
+# d = a * 3 #repeats the list (a) three times
+# print (d)
 
-# LIST SLICES IS THE SAME AS STRING SLICES
+# # LIST SLICES IS THE SAME AS STRING SLICES
 
-#LIST METHODS
-a.append(9) #adds another element to the list
-print (a)
-b.extend(a) #adds list "a" to b
-print (b)
-b.sort() #arranges the new "b" from low to high
-print (b)
-# b = b.sort()
-# print (b) #list methods are void, they return none
-
-#DELETING ELEMENTS
-x = b.pop(2) #removes the element with index specified 
-print (b) #returns the rest
-print (x) #returns the element removed
-# y = b.pop() #no index specified, returns only the last element
+# #LIST METHODS
+# a.append(9) #adds another element to the list
+# print (a)
+# b.extend(a) #adds list "a" to b
 # print (b)
-# print (y)
+# b.sort() #arranges the new "b" from low to high
+# print (b)
+# # b = b.sort()
+# # print (b) #list methods are void, they return none
 
-#If the removed value is not needed, use delete
-del b[1]
-print (b)
-# if the index of the element is not known use remove
-b.remove(9)
-print (b)
-# to remove more than one element
-del b[1:4]
-print (b)
+# #DELETING ELEMENTS
+# x = b.pop(2) #removes the element with index specified 
+# print (b) #returns the rest
+# print (x) #returns the element removed
+# # y = b.pop() #no index specified, returns only the last element
+# # print (b)
+# # print (y)
 
+# #If the removed value is not needed, use delete
+# del b[1]
+# print (b)
+# # if the index of the element is not known use remove
+# b.remove(9)
+# print (b)
+# # to remove more than one element
+# del b[1:4]
+# print (b)
+
+# #LIST OPERATIONS
+# print (len(b))
+# print (sum(b))
+# print (max(b))
+# print (min(b))
+# print (sum(b)/len(b))
+
+#FINDING AVERAGE
+# total = 0
+# count = 0
+# while True:
+#     inp = input ('Enter a number:\n')
+#     if inp == 'done':
+#         break
+#     try:
+#         value = float (inp)
+#     except:
+#         print ('please enter an integer ')
+#     total = total + value
+#     count = count + 1
+# average = total/count
+# print ('Average', average)
+
+#ALTERNATIVELY
+num_list = list()
+while True:
+    inp = input('Enter a number here:\n')
+    if inp == 'done':
+        break
+    try:
+        value = float (inp)
+    except:
+        print ("please enter an integer")
+    num_list.append(value)
+average = (sum(num_list)/len(num_list))
+print ('Average =', average)
 
 
 
