@@ -213,10 +213,38 @@
 # print (k)
 
 #parsing lines ( I don't understand line 219)
-fhand = open('textdoc.txt')
-for line in fhand:
-    line = line.rstrip()
-    if not line.startswith ('The'):
-        continue
-    words = line.split()
-    print (words[16])
+# fhand = open('textdoc.txt')
+# for line in fhand:
+#     line = line.rstrip()
+#     if not line.startswith ('The'):
+#         continue
+#     words = line.split()
+#     print (words[16])
+
+#Aliasing 
+# a = [1, 2, 3, 4]
+# b = a
+# a[0] = 45
+# print (b)
+
+#List arguments (doesn't run)
+# def delete_head(t):
+#     del t[0]
+#     letters = ['a', 'b', 'c', 'd', 'e', 'f']
+#     delete_head(letters)
+#     print(letters)
+
+# def tail(t):
+#     t[1:]
+#     letters = ['a', 'b', 'c', 'd']
+#     rest = tail(letters)
+#     print(rest)
+
+# t = ['a', 'b', 'c', 'd']
+# t = t.append('x')
+# t = t + ['x']
+# t.append(['x'])
+# t + 'x'
+# print(t)
+
+
