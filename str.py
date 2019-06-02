@@ -182,20 +182,41 @@
 # print ('Average', average)
 
 #ALTERNATIVELY
-num_list = list()
-while True:
-    inp = input('Enter a number here:\n')
-    if inp == 'done':
-        break
-    try:
-        value = float (inp)
-    except:
-        print ("please enter an integer")
-    num_list.append(value)
-average = (sum(num_list)/len(num_list))
-print ('Average =', average)
+# num_list = list()
+# while True:
+#     inp = input('Enter a number here:\n')
+#     if inp == 'done':
+#         break
+#     try:
+#         value = float (inp)
+#     except:
+#         print ("please enter an integer")
+#     num_list.append(value)
+# average = (sum(num_list)/len(num_list))
+# print ('Average =', average)
 
+#CONVERTING STTRING TO LIST
+# s = ('pining for the fjords')
+# t = s.split()
+# d = t.pop(2)
+# print (d)
+# y = list(s)
+# print ('here is split:', t)
+# print ('here is list:', y)
 
+#SPLITTING AND JOINING USING delimiter
+# delimiter = ' '
+# j = delimiter.join(t)
+# delimiter = ''
+# k = delimiter.join(y)
+# print (j)
+# print (k)
 
-
-
+#parsing lines ( I don't understand line 219)
+fhand = open('textdoc.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith ('The'):
+        continue
+    words = line.split()
+    print (words[16])
